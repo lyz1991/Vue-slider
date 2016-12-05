@@ -1,0 +1,49 @@
+.slidercontainer {
+  width: 100%;
+  height: 373/75rem;
+  overflow: hidden;
+  background-color: black;
+  .slider {
+    position: relative;
+    width: 10000000/75rem;
+    height: 100%;
+    overflow: hidden;
+    -webkit-backface-visibility:hidden; //隐藏转换的元素的背面
+    -webkit-transform-style: preserve-3d; //使被转换的元素的子元素保留其 3D 转换
+    -webkit-transform:translateX(-10rem);
+
+    div {
+      width: 10rem;
+      height: 100%;
+      font-size: 2rem;
+      float: left;
+      img{
+        width: 100%;
+      }
+    }
+  }
+  .num {
+    padding: .1rem .2rem;
+    border-radius: 10/75rem;
+    background: rgba(0,0,0,.4);
+    position: absolute;
+    right: 0;
+    bottom: .3rem;
+    color: white;
+  }
+}
+  .bigimg {
+    width: 100%;
+    position: fixed;
+    top: 40%;
+    transform: translate(0, -50%);
+  }
+.slider_append {
+  width: 10rem;
+  height: 100%;
+  font-size: 2rem;
+  float: left;
+  img {
+    width: 100%;
+  }
+}
